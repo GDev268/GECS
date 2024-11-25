@@ -1,0 +1,18 @@
+Entity:
+	id: 000000_000000
+	      gen    id
+
+	tags: Vec<String>
+
+Archetypes:
+	
+
+
+
+Query:
+
+	Vec<HashMap<TypeId,Rc<RefCell<dyn Component>>>>
+
+
+
+	
