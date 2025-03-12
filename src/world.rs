@@ -3,7 +3,6 @@ use std::{any::TypeId, cell::RefCell, collections::HashMap, rc::Rc};
 use uuid::Uuid;
 
 use crate::{entity::{Component, Entity, EntityBuilder}, storage::{Archetype, ComponentArchetype, Storage}};
-use crate::system::{IntoSystem, System};
 
 pub struct World {
     pub storage: Storage,

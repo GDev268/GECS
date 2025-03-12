@@ -46,7 +46,7 @@ impl<'a> EntityBuilder<'a> {
 
     #[inline]
     pub fn spawn(self) {
-        for (type_id, archetype) in self.world.storage.archetypes.iter() {
+        for (_, archetype) in self.world.storage.archetypes.iter() {
             archetype.borrow_mut().add_entity(&self.entity);
 
         }
