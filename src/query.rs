@@ -156,7 +156,7 @@ pub struct Query<Q: QueryableFn, F: QueryFilterFn = NoFilter> {
 
 
 impl<Q: QueryableFn + 'static,F: QueryFilterFn + 'static> WorldData for Query<Q,F> {
-    
+
     fn take(world: &mut World) -> Self {
         let types = Q::type_ids();
         let num_types = types.len();

@@ -81,4 +81,3 @@ fn get_mut_component<'a,'b, C:Component>(components: &'a HashMap<Uuid, Rc<RefCel
 
     RefMut::map(test.borrow_mut(), |component| component.as_mut_any().downcast_mut().unwrap())
 }
- 
